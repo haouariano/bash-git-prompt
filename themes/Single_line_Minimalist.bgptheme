@@ -7,17 +7,17 @@ override_git_prompt_colors() {
     gp_set_window_title "$PS1"
   }
 
-  Time12a="\$(date +%H:%M:%S)"
+  Time12a="\$(date +%H:%M)"
   PathShort="\W";
 
-  GIT_PROMPT_PREFIX="["
+  GIT_PROMPT_PREFIX="${Yellow}["
   GIT_PROMPT_SUFFIX="]"
   GIT_PROMPT_SEPARATOR=" "
-  GIT_PROMPT_STAGED="${Red}●${ResetColor}"
+  GIT_PROMPT_STAGED="${Green}●${ResetColor}"
   GIT_PROMPT_CONFLICTS="${Red}✖${ResetColor}"
-  GIT_PROMPT_CHANGED="${Blue}✚${ResetColor}"
+  GIT_PROMPT_CHANGED="${Cyan}✚${ResetColor}"
   GIT_PROMPT_UNTRACKED="${Cyan}…${ResetColor}"
-  GIT_PROMPT_STASHED="${BoldBlue}⚑${ResetColor}"
+  GIT_PROMPT_STASHED="${Yellow}⚑${ResetColor}"
   GIT_PROMPT_CLEAN="${BoldGreen}✔${ResetColor}"
 
   GIT_PROMPT_COMMAND_OK="${Green}✔"
